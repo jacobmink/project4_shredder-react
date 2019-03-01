@@ -6,10 +6,6 @@ import { withRouter } from 'react-router-dom'
 // Make a register/login button using browser router and link
 
 const Login = (props) => {
-  
-
-
-        console.log(props.state, 'login props.state')
         return (
             // <div>test</div>
            props.state.logged ? <User userInfo={props.state} showUserModal={props.showUserModal} showEditModal={props.showEditModal} handleChange={props.handleChange} handleUserUpdate={props.handleUserUpdate} deleteUser={props.deleteUser}/> : 
